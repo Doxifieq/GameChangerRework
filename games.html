@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/module.css">
+        <link rel="stylesheet" href="css/state.css">
+        <link rel="stylesheet" href="css/theme.css">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Game Changer - Spil</title>
+    </head>
+
+    <body>
+        <header class="fixed w-full z-10 bg-neutral-950/[0.85]">
+            <nav class="hidden sm:block">
+                <ul class="uppercase flex text-white justify-center">
+                    <li class="py-2 px-6">
+                        <a href="index.html">Forside</a>
+                    </li>
+
+                    <li class="py-2 px-6 text-black bg-cyan-400">
+                        <a href="#">Spil</a>
+                    </li>
+
+                    <li class="py-2 px-6">
+                        <a href="#">Anmeldelser</a>
+                    </li>
+
+                    <li class="py-2 px-6">
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="mobile-menu-container" class="fixed sm:hidden translate-x-full transition-transform duration-500 text-center w-full h-full z-10 bg-neutral-50">
+            <div class="bg-neutral-950/[0.85] p-5">
+                <img class="m-auto" src="assets/logo.png" alt="logo.png">
+            </div>
+
+            <ul class="mt-16 w-5/6 m-auto text-left">
+                <li class="text-4xl mt-5">
+                    <a href="index.html">Forside</a>
+                </li>
+
+                <li class="text-4xl mt-5">
+                    <a class="underline" href="#">Spil</a>
+                </li>
+
+                <li class="text-4xl mt-5">
+                    <a href="#">Anmeldelser</a>
+                </li>
+
+                <li class="text-4xl mt-5">
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+        <button id="mobile-menu-button" class="block sm:hidden z-10 fixed w-20 h-20 end-0 bottom-0">
+            <img class="w-full" src="assets/home.png" alt="home.png">
+        </button>
+
+        <div class="relative pb-12 pt-12 bg-neutral-400">
+            <div class="w-5/6 m-auto mb-6 flex flex-col sm:flex-row items-center sm:items-start justify-between">
+                <a href="#">
+                    <img src="assets/logo.png" alt="logo.png">
+                </a>
+
+                <nav>
+                    <ul class="flex space-x-2">
+                        <li>
+                            <a href="#">
+                                <img src="assets/icon_facebook.png" alt="icon_facebook.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/icon_gplus.png" alt="icon_gplus.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/icon_twitter.png" alt="icon_twitter.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/icon_youtube.png" alt="icon_youtube.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main class="relative -mt-10 p-5 sm:w-5/6 m-auto bg-neutral-50">
+            <section class="grid grid-cols-6 gap-4 mt-5">
+                <div class="col-span-6 lg:col-span-6 xl:col-span-4">
+                    <div class="bg-neutral-950 p-4 flex space-x-5">
+                        <img class="w-8" src="assets/icon_titlebar.png" alt="icon_titlebar.png">
+
+                        <h2 class="text-sky-400 text-2xl font-bold">Aktuelle spil</h2>
+                    </div>
+
+                    <div class="grid grid-rows-6 [&>*:nth-child(odd)]:bg-neutral-50 [&>*:nth-child(even)]:bg-neutral-200">
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_splintercell.jpg" alt="thumb_splintercell.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Splinter Cell: Black List</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Ubisoft</a> | Genre: Stealth</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_gtav.jpg" alt="thumb_gtav.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Grand Theft Auto V</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Rockstar Games</a> | Genre: Action-Adventure</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_call_of_duty.jpg" alt="thumb_call_of_duty.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Call of Duty: Ghosts</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Activision</a> | Genre: First Person Shooter</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_forza4.jpg" alt="thumb_forza4.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Forza Motorsport 4</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Microsoft Studios</a> | Genre: Sport</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_red_dead_redemption.jpg" alt="thumb_red_dead_redemption.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Red Dead Redemption</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Rockstar Games</a> | Genre: Action-Adventure</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-48 h-48 max-w-48 max-h-48" src="assets/thumb_halo4.jpg" alt="thumb_halo4.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Halo 4</h3>
+                                <p class="text-gray-700">Udgiver: <a class="underline" href="#">Microsoft Studios</a> | Genre: Action-Adventure</p>
+                                <p class="text-gray-700 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consequatur deleniti fugit harum iste, magni molestias neque officia quam quisquam ratione similique suscipit. Adipisci amet at blanditiis dicta doloremque et, minus nihil ullam? Consectetur dolore facere laudantium quo repellat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-6 lg:col-span-6 xl:col-span-2">
+                    <div class="bg-neutral-950 p-4 flex space-x-5">
+                        <img class="w-8" src="assets/icon_titlebar.png" alt="icon_titlebar.png">
+
+                        <h2 class="text-sky-400 text-2xl font-bold">Nye anmeldelser</h2>
+                    </div>
+
+                    <div class="grid grid-rows-6 [&>*:nth-child(odd)]:bg-neutral-50 [&>*:nth-child(even)]:bg-neutral-200">
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_splintercell.jpg" alt="thumb_splintercell.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Splinter Cell: Black List</h3>
+                                <p class="text-gray-700">Oprettet: 15. februar 2014</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_gtav.jpg" alt="thumb_gtav.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Grand Theft Auto V</h3>
+                                <p class="text-gray-700">Oprettet: 14. februar 2014</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_call_of_duty.jpg" alt="thumb_call_of_duty.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Call of Duty: Ghosts</h3>
+                                <p class="text-gray-700">Oprettet: 13. februar 2014</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_forza4.jpg" alt="thumb_forza4.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Forza Motorsport 4</h3>
+                                <p class="text-gray-700">Oprettet: 12. februar 2014</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_red_dead_redemption.jpg" alt="thumb_red_dead_redemption.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Red Dead Redemption</h3>
+                                <p class="text-gray-700">Oprettet: 11. februar 2014</p>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4 space-x-4 w-full m-auto">
+                            <img class="w-28" src="assets/thumb_halo4.jpg" alt="thumb_halo4.jpg">
+
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Halo 4</h3>
+                                <p class="text-gray-700">Oprettet: 10. februar 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-neutral-300 p-5">
+            <p class="text-center text-gray-500">GameChanger Website | support@gamechanger.dk | www.gamechanger.dk</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
